@@ -1,0 +1,36 @@
+@keyframes selected {
+
+  50% {
+    transform: rotateY(90deg);
+    background-color: transparent;
+  }
+
+  100% {
+    transform: rotateY(0deg);
+    background-color: var(--color);
+  }
+}
+
+/* @keyframes selected {
+  0% {
+    scale: 4;
+    transform: rotateY(15deg) rotateX(52deg) rotateZ(150deg);
+  }
+
+  50% {
+    background-color: transparent;
+    transform: rotateY(90deg);
+    scale: .1;
+  }
+
+  100% {
+    scale: 3;
+    transform: rotateY(0deg) rotateX(137deg) rotateZ(15deg);
+    filter: invert(100%);
+  }
+
+  51%,
+  100% {
+    background-color: var(--color);
+  }
+} */
