@@ -1,0 +1,25 @@
+.title {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.form {
+  opacity: transparent;
+  overflow: hidden;
+  width: 0;
+  height: 0;
+}
+
+.reset {
+  margin-top: 1rem;
+  width: 50vw;
+  margin-left: 25vw;
+  height: 4rem;
+  padding: 1rem;
+  background-color: var(--accent-color);
+  border: 1px solid black;
+  font-size: 2rem;
+  box-sizing: border-box;
+  border-radius: 1rem;
+}
