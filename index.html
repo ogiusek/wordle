@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="style/initial.css" />
+  <link rel="stylesheet" href="style/animations.css" />
+  <link rel="stylesheet" href="style/static.css" />
+  <link rel="stylesheet" href="style/style.css" />
+
+  <script src="./js/words.js"></script>
+  <script defer src="./js/index.js"></script>
+</head>
+
+<body>
+  <h1 class="title">english wordle</h1>
+  <form onsubmit="onWordSubmit(event)" class="form">
+    <input id="input" type="text" maxlength="5" minlength="5" required oninput="onInput()" />
+  </form>
+
+  <button class="reset" onclick="reset()">reset</button>
+  <div id="app"></div>
+</body>
+
+</html>
