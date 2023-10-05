@@ -1,0 +1,16 @@
+:root {
+  font-size: 16px;
+  --main-color: #223;
+  --text-color: #fff;
+  --accent-color: #445;
+}
+
+body {
+  margin: 0px;
+  background-color: var(--main-color);
+}
+
+* {
+  color: var(--text-color);
+  text-transform: uppercase;
+}
