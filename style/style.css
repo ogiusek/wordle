@@ -27,11 +27,32 @@
   background-color: var(--accent-color);
   border-radius: .5rem;
   margin: 1rem 1px;
-  /* margin: .5rem 1px; */
+}
+
+.tile:nth-child(1) {
+  --nth: 1;
+}
+
+.tile:nth-child(2) {
+  --nth: 2;
+}
+
+.tile:nth-child(3) {
+  --nth: 3;
+}
+
+.tile:nth-child(4) {
+  --nth: 4;
+}
+
+.tile:nth-child(5) {
+  --nth: 5;
 }
 
 .add {
-  animation: .5s forwards selected;
+  --transition-time: .5s;
+  animation: var(--transition-time) forwards selected;
+  animation-delay: calc((var(--nth) - 1) * var(--transition-time) / 3);
   /* animation: .1s infinite selected; */
 }
 
