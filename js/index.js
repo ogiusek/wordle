@@ -24,9 +24,12 @@ function onWordSubmit(e) {
   inputs[inputs.length - 1].added = true;
   if (inputs.length !== initLifes)
     inputs.push(getNewRow());
+  else
+    modal = `You lost word is ${word}`;
+
   html.input.value = "";
   setInputValue("");
-  won = inputs.filter(e => e.value === word && e.added).length !== 0;
+  won = inputs.filter(e => e.value === word && e.added).length !== 0 || inputs.filter(e => e.added).length === initLifes;
 
   updateUi();
 }
