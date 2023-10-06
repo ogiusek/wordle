@@ -24,7 +24,7 @@ function onWordSubmit(e) {
   inputs[inputs.length - 1].added = true;
   if (inputs.length !== initLifes)
     inputs.push(getNewRow());
-  else
+  else if (inputs.filter(e => e.value === word && e.added).length === 0)
     modal = `You lost word is ${word}`;
 
   html.input.value = "";
